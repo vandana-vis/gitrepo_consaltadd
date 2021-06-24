@@ -129,6 +129,12 @@ class Person:
         else:
             print("You are old.")
 
-    def yearPasses(self):
+    def yearPasses(self, addYears):
         # Increment the age of the person in here
-        self.age += initialAge
+        self.age += addYears
+        print("Age after incrementing", addYears, "years is ", self.age)
+
+
+personObj = Person(64)
+personObj.amIOld()
+personObj.yearPasses(30)
