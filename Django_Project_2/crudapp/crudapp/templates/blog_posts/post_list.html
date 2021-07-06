@@ -15,8 +15,8 @@
             <td>{{ book.name }}</td>
             <td>{{ book.pages }}</td>
             <td><a href = "{% url 'book_view' book.id %}">view</a></td>
-            <td><h3>edit</h3></td>
-            <td><h3>delete</h3></td>
+            <td><a href = "{% url 'book_edit' book.id %}">edit</a></td>
+            <td><a href = "{% url 'book_delete' book.id %}">delete</a></td>
         </tr>
         {% endfor %}
     </tbody>
